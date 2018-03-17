@@ -1,16 +1,13 @@
 package script.view;
 
-import org.osbot.Co;
 import org.osbot.rs07.api.model.Item;
 import org.osbot.rs07.input.mouse.InventorySlotDestination;
-import org.osbot.rs07.script.MethodProvider;
 import org.osbot.rs07.script.Script;
 import script.services.PriceLoader;
 
 import javax.swing.*;
 import java.awt.*;
 import java.util.List;
-import java.util.function.Consumer;
 import java.util.stream.Collectors;
 
 public class EasyAlchView extends JFrame {
