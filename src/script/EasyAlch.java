@@ -20,7 +20,7 @@ import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
 
-@ScriptManifest(name = "EasyAlch", author = "Battleguard", version = 4.0, info = "Magic: Alchs all the items you select.  No messing with ids.  Automatically sets up alch spot for you!", logo = "")
+@ScriptManifest(name = "EasyAlch", author = "Battleguard", version = 4.1, info = "Magic: Alchs all the items you select.  No messing with ids.  Automatically sets up alch spot for you!", logo = "")
 public class EasyAlch extends Script implements MessageListener {
 
     public final Rectangle HighAlchSpellLocation = new Rectangle(703, 316, 24, 24);

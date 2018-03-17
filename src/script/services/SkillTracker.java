@@ -10,7 +10,7 @@ import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 
 public class SkillTracker {
-    private final long ONE_HOUR = TimeUnit.HOURS.toMillis(1);
+    private final double ONE_HOUR = TimeUnit.HOURS.toMillis(1);
     private final Map<Skill, Tracker> _skillMap;
     private final Skills _skills;
 
@@ -96,7 +96,7 @@ public class SkillTracker {
 
         public long timeTillNextLevel()
         {
-            return gainedXp() == 0 ? 0 : ((long)experienceTillNextLevel() * ONE_HOUR) / (long)gainedXpPerHour();
+            return gainedXp() == 0 ? 0 : (long)(experienceTillNextLevel() * (ONE_HOUR / gainedXpPerHour()));
         }
 
         public String formattedTimeTillNextLevel()
